@@ -1,6 +1,6 @@
 .tools {
     width: 100%;
-    height: rem(906px);
+    // height: rem(906px);
     padding-top: rem(135px);
     padding-bottom: rem(167px);
     overflow: hidden;
@@ -21,9 +21,6 @@
         line-height: rem(27px);
         color: #6c6e75;
 
-        // p {
-        //     width: rem(560px);
-        // }
     }
 
     &__title {
@@ -32,8 +29,6 @@
         font-size: rem(64px);
         line-height: rem(77px);
         color: #3b3c40;
-        // margin-top: rem(135px);
-        margin-bottom: rem(42px);    
     }
 
     &__link {
@@ -47,11 +42,9 @@
     }
 
     &__image {
-        // width: rem(972px); 
         display: flex;
         align-items: center;
         justify-content: start;
-        // overflow: hidden;
         object-fit: contain;
         
         img {
