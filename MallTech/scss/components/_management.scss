@@ -1,10 +1,15 @@
 .management {
+    width: 100%;
     height: rem(892px);
     background-color: #f0f8fa;
+    
+
     &__image {
-        margin-left: rem(169px);
-        margin-right: rem(141px);
-        margin-bottom: rem(41px);
+        width: 100%;
+        height: rem(544px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__content {
         display: flex;
@@ -19,4 +24,33 @@
     color: #2a2a2d;
     margin-left: 2px;
     }
+
+    &__column {
+        &:not(:last-child) {
+            margin-right: rem(80px);
+        }
+    }
+    
+    &__column {
+        &__item {
+            @extend %subtitle-font;
+            font-size: 18px;
+            color: #6c6e75;
+            line-height: 27px;
+        }
+        &__title {
+            @extend %title-font;
+            font-size: 64px;
+            line-height: 77px;
+            margin-top: 10px;
+            margin-bottom: 51px;
+        }
+    }
+    
+    &__link-arrow {
+        margin-left: 10px;
+        display: flex;
+    }
+
+    
 }
