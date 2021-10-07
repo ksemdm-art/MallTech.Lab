@@ -5,32 +5,32 @@
     &__wrapper {
         display: flex;
         align-items: center;
-        padding-top: 71px;
+        padding-top: rem(71px);
     }
     &__info {
         // margin-top: 71px;
     }
     &__title {
         @extend %link-font;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: rem(40px);
+        line-height: rem(48px);
         color: #fff;
-        max-width: 186px;
-        margin-bottom: 32px;
+        max-width: rem(186px);
+        margin-bottom: rem(32px);
     }
     &__subtitle {
         @extend %subtitle-font;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: rem(16px);
+        line-height: rem(20px);
         color: #fff;
-        max-width: 312px;
-        margin-bottom: 80px;
+        max-width: rem(312px);
+        margin-bottom: rem(80px);
     }
     &__contact {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        max-width: 312px;
+        max-width: rem(312px);
     }
     a {
         text-decoration: none;
@@ -40,40 +40,38 @@
     &__contact-telephone {
         @extend %link-font;
         font-size: 1.5rem;
-        line-height: 36px;
-        // height: 36px;
+        line-height: rem(36px);
     }
 
     &__contact-email {
         @extend %link-font;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: rem(24px);
+        line-height: rem(36px);
     }
     &__form {
-        // margin-top: 71px;
-        margin-left: 90px;
+        margin-left: rem(90px);
     }
     .form {
         input[type="text"] {
             @extend %subtitle-font;
-            padding: 0px 20px;
-            font-size: 16px;
-            line-height: 20px;
+            padding: rem(0px) rem(20px);
+            font-size: rem(16px);
+            line-height: rem(20px);
             color: #fff;
         }
         input::placeholder {
             color: #b9dcde;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: rem(16px);
+            line-height: rem(20px);
             position: relative;
         }
-        width: 770px;
-        height: 314px;
+        width: rem(770px);
+        height: rem(314px);
         &__content {
             display: flex;
             flex-direction: row;
             align-items: start;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
             justify-content: space-between;
         }
         &__submit {
@@ -83,37 +81,36 @@
             justify-content: space-between;
         }
         &__name {
-            width: 330px;
-            height: 60px;
+            width: rem(330px);
+            height: rem(60px);
             background-color: transparent;
             border: 1px solid #b9dcde;
         }
         &__tel {
-            width: 330px;
-            height: 60px;
+            width: rem(330px);
+            height: rem(60px);
             background-color: transparent;
             border: 1px solid #b9dcde;
-            // margin-left: 30px;
         }
         &__email {
-            width: 730px;
-            height: 60px;
+            width: rem(730px);
+            height: rem(60px);
             background-color: transparent;
             border: 1px solid #b9dcde;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
         &__theme {
-            width: 770px;
-            height: 60px;
+            width: rem(770px);
+            height: rem(60px);
             background-color: transparent;
             border: 1px solid #b9dcde;
-            margin-bottom: 40px;
-            padding: 20px 52px 20px 20px;
+            margin-bottom: rem(40px);
+            padding: rem(20px) rem(52px) rem(20px) rem(20px);
             appearance: none;
             cursor: pointer;
             color: #b9dcde;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: rem(16px);
+            line-height: rem(20px);
             @extend %subtitle-font;
             &-option {
                 color: black;
@@ -121,21 +118,21 @@
         }
         &__description {
             @extend %subtitle-font;
-            width: 331px;
-            font-size: 14px;
-            line-height: 18px;
+            width: rem(331px);
+            font-size: rem(14px);
+            line-height: rem(18px);
             color: #b9dcde;
         }
         &__link {
             color: #ffffff;
         }
         &__btn {
-            width: 173px;
-            height: 52px;
+            width: rem(173px;
+            height: rem(52px;
             border: none;
             @extend %subtitle-font;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: rem(16px);
+            line-height: rem(20px);
         }
     }
 }
@@ -147,9 +144,9 @@
 .select__wrapper::after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: rem(20px);
+    right: rem(20px);
+    bottom: rem(20px);
     pointer-events: none;
     background-image: url("/img/select-arrow.svg");
     height: 20px;
