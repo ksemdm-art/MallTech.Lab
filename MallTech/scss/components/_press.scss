@@ -1,0 +1,103 @@
+.press {
+    height: 830px;
+    // &__line{
+    //     border: 1px solid #d5d5d8;
+    //     margin-top: 27px;
+    //     margin-left: 375px;
+    //     margin-bottom: 47px;
+    // }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 132%;
+            background-color: #d5d5d8;
+        }
+    }
+    &__title {
+        @extend %title-font;
+        font-size: 64px;
+        line-height: 77px;
+        color: #3b3c40;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        @extend %link-font;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2a2a2d;
+    }
+    &__content {
+    }
+    &__column {
+        width: 540/1920 * 100%;
+        float: right;
+    }
+    &__navigation {
+    }
+
+    &__slider-title {
+        font-size: 32px;
+        line-height: 39px;
+        @extend %title-font;
+        width: 534px;
+    }
+    &__slider-text {
+        font-size: 18px;
+        line-height: 27px;
+        @extend %subtitle-font;
+        color: #6c6e75;
+    }
+    &__slider-info {
+        width: 540px;
+    }
+    &__slider-test {
+        margin-bottom: 110px;
+    }
+    &__slider-data {
+        font-size: 14px;
+        line-height: 18px;
+        color: #6c6e75;
+        @extend %title-font;
+    }
+    &__slider-img {
+        width: 570px;
+        height: 527px;
+        display: block;
+    }
+
+    &__slider {
+        position: relative;
+    }
+
+    &__slider .slick-arrow {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        font-size: 0;
+    }
+
+
+    &__slider .slick-next.slick-arrow {
+        width: 54px;
+        height: 49px;
+        bottom: 20px;
+        right: 370px;
+        background: url("../img/arrow_right.svg");
+        border: none;
+    }
+
+    &__slider .slick-prev.slick-arrow {
+        width: 54px;
+        height: 49px;
+        bottom: 20px;
+        right: 440px;
+        background: url("../img/arrow_left.svg");
+        border: none;
+    }
+}
