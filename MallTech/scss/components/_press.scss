@@ -1,11 +1,5 @@
 .press {
     height: 830px;
-    // &__line{
-    //     border: 1px solid #d5d5d8;
-    //     margin-top: 27px;
-    //     margin-left: 375px;
-    //     margin-bottom: 47px;
-    // }
     &__header {
         display: flex;
         justify-content: space-between;
@@ -36,7 +30,6 @@
     }
     &__column {
         width: 540/1920 * 100%;
-        float: right;
     }
     &__navigation {
     }

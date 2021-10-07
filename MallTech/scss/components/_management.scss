@@ -2,7 +2,6 @@
     width: 100%;
     height: rem(892px);
     background-color: #f0f8fa;
-    
 
     &__image {
         width: 100%;
@@ -17,12 +16,12 @@
 
     &__link {
         display: flex;
-    align-items: center;
-    @extend %link-font;
-    font-size: 16px;
-    line-height: 24px;
-    color: #2a2a2d;
-    margin-left: 2px;
+        align-items: center;
+        @extend %link-font;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2a2a2d;
+        margin-left: 2px;
     }
 
     &__column {
@@ -30,7 +29,7 @@
             margin-right: rem(80px);
         }
     }
-    
+
     &__column {
         &__item {
             @extend %subtitle-font;
@@ -46,11 +45,9 @@
             margin-bottom: 51px;
         }
     }
-    
+
     &__link-arrow {
         margin-left: 10px;
         display: flex;
     }
-
-    
 }
