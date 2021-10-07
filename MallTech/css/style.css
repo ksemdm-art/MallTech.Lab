@@ -1,14 +1,14 @@
-.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
+.header__title, .header__info-content, .tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .header__info-title, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
 
-.request__title, .request__contact-telephone, .request__contact-email, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .header__info-link, .buttons__consult {
+.request__title, .request__contact-telephone, .request__contact-email, .header__info-link, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .buttons__consult {
   font-family: Inter;
   font-weight: 500;
 }
@@ -18,17 +18,17 @@
   font-weight: 400;
 }
 
-.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
+.header__title, .header__info-content, .tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .header__info-title, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
 
-.request__title, .request__contact-telephone, .request__contact-email, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .header__info-link, .buttons__consult {
+.request__title, .request__contact-telephone, .request__contact-email, .header__info-link, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .buttons__consult {
   font-family: Inter;
   font-weight: 500;
 }
@@ -253,6 +253,84 @@
   width: 20px;
 }
 
+.header {
+  background-image: url("../img/main_screen.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  min-height: 934px;
+}
+
+.header__logo-image {
+  margin-top: 3.85714rem;
+  margin-bottom: 11.07143rem;
+}
+
+.header__title {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 112px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__item {
+  width: 343px;
+  margin-bottom: 116px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 69px;
+}
+
+.header__title-wrapper {
+  position: relative;
+}
+
+.header__title-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background: #fff;
+}
+
+.header__info-title {
+  display: flex;
+  margin-top: 0;
+  width: 300px;
+  height: 143px;
+  color: #74bbbf;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  margin-right: 45px;
+}
+
+.header__info-content {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  color: #e0e0e0;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header__info-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f2f2f2;
+}
+
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,7 +362,6 @@
 
 .tools {
   width: 100%;
-  height: 64.71429rem;
   padding-top: 9.64286rem;
   padding-bottom: 11.92857rem;
   overflow: hidden;
@@ -322,7 +399,6 @@
   font-size: 4.57143rem;
   line-height: 5.5rem;
   color: #3b3c40;
-  margin-bottom: 3rem;
 }
 
 .tools__link {
@@ -543,7 +619,7 @@
 }
 
 .press__slider-info {
-  width: 540px;
+  width: 38.57143rem;
 }
 
 .press__slider-test {
@@ -557,8 +633,8 @@
 }
 
 .press__slider-img {
-  width: 570px;
-  height: 527px;
+  width: 40.71429rem;
+  height: 37.64286rem;
   display: block;
 }
 
@@ -687,17 +763,17 @@
   border: none;
 }
 
-.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
+.header__title, .header__info-content, .tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .header__info-title, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
 
-.request__title, .request__contact-telephone, .request__contact-email, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .header__info-link, .buttons__consult {
+.request__title, .request__contact-telephone, .request__contact-email, .header__info-link, .tools__link, .management__link, .agency__link, .press__link, .case__slider-link, .buttons__consult {
   font-family: Inter;
   font-weight: 500;
 }
@@ -793,13 +869,13 @@ html {
 
 @media screen and (max-width: 1366px) {
   html {
-    font-size: 9px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -898,6 +974,7 @@ html {
   line-height: 24px;
   color: #f2f2f2;
 }
+
 
 .container {
   max-width: 60.98958%;

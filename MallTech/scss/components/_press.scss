@@ -47,7 +47,7 @@
         color: #6c6e75;
     }
     &__slider-info {
-        width: 540px;
+        width: rem(540px);
     }
     &__slider-test {
         margin-bottom: 110px;
@@ -59,8 +59,8 @@
         @extend %title-font;
     }
     &__slider-img {
-        width: 570px;
-        height: 527px;
+        width: rem(570px);
+        height: rem(527px);
         display: block;
     }
 
