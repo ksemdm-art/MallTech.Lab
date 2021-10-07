@@ -1,0 +1,22 @@
+.management {
+    height: rem(892px);
+    background-color: #f0f8fa;
+    &__image {
+        margin-left: rem(169px);
+        margin-right: rem(141px);
+        margin-bottom: rem(41px);
+    }
+    &__content {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+    align-items: center;
+    @extend %link-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2a2a2d;
+    margin-left: 2px;
+    }
+}

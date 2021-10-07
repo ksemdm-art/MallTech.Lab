@@ -1,0 +1,39 @@
+.tools {
+    height: rem(906px);
+
+    &__title {
+        width: rem(560px);
+        @extend %title-font;
+        font-size: rem(64px);
+        line-height: rem(77px);
+        color: #3b3c40;
+        margin-top: rem(135px);
+        margin-bottom: rem(42px);
+        
+    }
+    &__content {
+        @extend %subtitle-font;
+        width: rem(560px);
+        font-size: rem(18px);
+        line-height: rem(27px);
+        color: #6c6e75;
+
+        p {
+            width: rem(560px);
+        }
+    }
+
+    &__link {
+        margin-top: rem(55px);
+        display: flex;
+        align-items: center;
+        @extend %link-font;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: #2a2a2d;
+    }
+}
+
+.tools__image {
+    float: right;
+}
