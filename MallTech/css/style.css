@@ -218,9 +218,9 @@
 }
 
 .request .form__description {
-  width: 331px;
-  font-size: 14px;
-  line-height: 18px;
+  width: 23.64286rem;
+  font-size: 1rem;
+  line-height: 1.28571rem;
   color: #b9dcde;
 }
 
@@ -229,11 +229,11 @@
 }
 
 .request .form__btn {
-  width: 173px;
-  height: 52px;
+  width: 12.35714rem;
+  height: 3.71429rem;
   border: none;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.14286rem;
+  line-height: 1.42857rem;
 }
 
 .select__wrapper {
@@ -243,9 +243,9 @@
 .select__wrapper::after {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 1.42857rem;
+  right: 1.42857rem;
+  bottom: 1.42857rem;
   pointer-events: none;
   background-image: url("/img/select-arrow.svg");
   height: 20px;
@@ -654,7 +654,7 @@
 
 .footer {
   bottom: 0;
-  height: 80px;
+  height: 5.71429rem;
   background-color: #3B3C40;
 }
 
@@ -665,19 +665,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 22px;
+  padding-top: 1.57143rem;
 }
 
 .footer__description {
-  margin-bottom: 9px;
-  font-size: 12px;
-  line-height: 15px;
+  margin-bottom: 0.64286rem;
+  font-size: 0.85714rem;
+  line-height: 1.07143rem;
   color: #ffffff;
 }
 
 .footer__links {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.85714rem;
+  line-height: 1.07143rem;
 }
 
 .footer__links-item {
@@ -698,7 +698,7 @@
 }
 
 .footer__links-item:last-child {
-  margin-left: 18px;
+  margin-left: 1.28571rem;
 }
 
 .footer__logo {
@@ -717,17 +717,17 @@
 
 .footer__logo-text {
   margin-left: 7px;
-  width: 160px;
-  font-size: 12px;
-  line-height: 21px;
+  width: 11.42857rem;
+  font-size: 0.85714rem;
+  line-height: 1.5rem;
   color: #fff;
   opacity: .7;
 }
 
 .footer__logo-img {
-  width: 33px;
-  height: 34px;
-  margin-top: 9px;
+  width: 2.35714rem;
+  height: 2.42857rem;
+  margin-top: 0.64286rem;
 }
 
 html {
