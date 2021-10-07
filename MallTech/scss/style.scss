@@ -101,10 +101,12 @@ html{
 
     }
 }
+
 .container {
     max-width: 1171/1920 * 100%;
-    margin-left: 375/1920 * 100%;
-    margin-right: 375/1920 * 100%;
+    // margin-left: 375/1920 * 100%;
+    // margin-right: 375/1920 * 100%;
+    margin: 0 auto;
 }
 
 .buttons {
