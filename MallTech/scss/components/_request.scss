@@ -132,6 +132,7 @@
             @extend %subtitle-font;
             font-size: rem(16px);
             line-height: rem(20px);
+            cursor: pointer;
         }
     }
 }

@@ -234,6 +234,7 @@
   border: none;
   font-size: 1.14286rem;
   line-height: 1.42857rem;
+  cursor: pointer;
 }
 
 .select__wrapper {
