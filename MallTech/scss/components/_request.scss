@@ -1,6 +1,6 @@
 @import "vars";
 .request {
-    height: 488px;
+    height: rem(488px);
     background-color: #74bbbf;
     &__wrapper {
         display: flex;
