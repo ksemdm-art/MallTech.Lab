@@ -276,9 +276,13 @@
 }
 
 .management {
-  width: 100%;
-  height: 63.71429rem;
   background-color: #f0f8fa;
+}
+
+.management .container {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 8.14286rem;
 }
 
 .management__image {
@@ -317,6 +321,7 @@
   line-height: 77px;
   margin-top: 10px;
   margin-bottom: 51px;
+  text-transform: uppercase;
 }
 
 .management__link-arrow {
@@ -324,15 +329,16 @@
   display: flex;
 }
 
-.agency {
-  height: 61.28571rem;
+.agency .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10.5rem;
+  margin-bottom: 6rem;
 }
 
-.agency__content {
-  z-index: 1;
-  margin-top: 10.5rem;
+.agency__text {
   width: 38.28571rem;
-  float: right;
 }
 
 .agency__title {
@@ -358,11 +364,14 @@
 
 .agency__image {
   width: 32%;
-  z-index: 2;
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 3.5rem;
-  margin-left: 14.28571rem;
-  margin-top: 10.5rem;
+}
+
+.agency__image img {
+  width: 100%;
 }
 
 .press {

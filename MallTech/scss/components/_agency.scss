@@ -1,11 +1,16 @@
 .agency {
-    height: rem(858px);
-
-    &__content {
-        z-index: 1;
+    // height: rem(858px);
+    
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
         margin-top: rem(147px);
+        margin-bottom: rem(84px);
+    }
+
+    &__text {
         width: rem(536px);
-        float: right;
     }
     &__title {
         @extend %title-font;
@@ -28,13 +33,14 @@
         color: #2a2a2d;
         margin-top: rem(25px);
     }
-}
-
-.agency__image {
-    width: 32%;
-    z-index: 2;
-    float: left;
-    margin-right: rem(49px);
-    margin-left: rem(200px);
-    margin-top: rem(147px);
+    &__image {
+        width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: rem(49px);
+        img {
+            width: 100%;
+        }
+    }
 }
