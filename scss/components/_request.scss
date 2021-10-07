@@ -1,0 +1,153 @@
+@import "vars";
+.request {
+    height: rem(488px);
+    background-color: #74bbbf;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: rem(71px);
+    }
+    &__info {
+    }
+    &__title {
+        @extend %link-font;
+        font-size: rem(40px);
+        line-height: rem(48px);
+        color: #fff;
+        max-width: rem(186px);
+        margin-bottom: rem(32px);
+    }
+    &__subtitle {
+        @extend %subtitle-font;
+        font-size: rem(16px);
+        line-height: rem(20px);
+        color: #fff;
+        max-width: rem(312px);
+        margin-bottom: rem(80px);
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: rem(312px);
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__contact-telephone {
+        @extend %link-font;
+        font-size: 1.5rem;
+        line-height: rem(36px);
+    }
+
+    &__contact-email {
+        @extend %link-font;
+        font-size: rem(24px);
+        line-height: rem(36px);
+    }
+    &__form {
+        margin-left: rem(90px);
+    }
+    .form {
+        input[type="text"] {
+            @extend %subtitle-font;
+            padding: rem(0px) rem(20px);
+            font-size: rem(16px);
+            line-height: rem(20px);
+            color: #fff;
+        }
+        input::placeholder {
+            color: #b9dcde;
+            font-size: rem(16px);
+            line-height: rem(20px);
+            position: relative;
+        }
+        width: rem(770px);
+        height: rem(314px);
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            margin-bottom: rem(20px);
+            justify-content: space-between;
+        }
+        &__submit {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__name {
+            width: rem(330px);
+            height: rem(60px);
+            background-color: transparent;
+            border: 1px solid #b9dcde;
+        }
+        &__tel {
+            width: rem(330px);
+            height: rem(60px);
+            background-color: transparent;
+            border: 1px solid #b9dcde;
+        }
+        &__email {
+            width: rem(730px);
+            height: rem(60px);
+            background-color: transparent;
+            border: 1px solid #b9dcde;
+            margin-bottom: rem(20px);
+        }
+        &__theme {
+            width: rem(770px);
+            height: rem(60px);
+            background-color: transparent;
+            border: 1px solid #b9dcde;
+            margin-bottom: rem(40px);
+            padding: rem(20px) rem(52px) rem(20px) rem(20px);
+            appearance: none;
+            cursor: pointer;
+            color: #b9dcde;
+            font-size: rem(16px);
+            line-height: rem(20px);
+            @extend %subtitle-font;
+            &-option {
+                color: black;
+            }
+        }
+        &__description {
+            @extend %subtitle-font;
+            width: rem(331px);
+            font-size: rem(14px);
+            line-height: rem(18px);
+            color: #b9dcde;
+        }
+        &__link {
+            color: #ffffff;
+        }
+        &__btn {
+            width: rem(173px;
+            height: rem(52px;
+            border: none;
+            @extend %subtitle-font;
+            font-size: rem(16px);
+            line-height: rem(20px);
+        }
+    }
+}
+
+.select__wrapper {
+    position: relative;
+}
+
+.select__wrapper::after {
+    content: "";
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    bottom: rem(20px);
+    pointer-events: none;
+    background-image: url("/img/select-arrow.svg");
+    height: 20px;
+    width: 20px;
+}
