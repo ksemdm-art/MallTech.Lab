@@ -105,10 +105,6 @@ html{
     margin-left: 375/1920 * 100%;
     margin-right: 375/1920 * 100%;
 }
-.link-arrow {
-    margin-left: 10px;
-    display: flex;
-}
 
 .buttons {
     display: flex;
@@ -175,31 +171,7 @@ html{
     color: #74bbbf;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    &__column {
-        &:not(:last-child) {
-            margin-right: rem(80px);
-        }
-    }
-}
-.column {
-    &__item {
-        @extend %subtitle-font;
-        font-size: 18px;
-        color: #6c6e75;
-        line-height: 27px;
-    }
-}
 
-.column__title {
-    @extend %title-font;
-    font-size: 64px;
-    line-height: 77px;
-    margin-top: 10px;
-    margin-bottom: 51px;
-}
 
 .content {
     &__image {

@@ -1,9 +1,9 @@
-.tools__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__title, .column__column-title {
+.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
@@ -18,12 +18,12 @@
   font-weight: 400;
 }
 
-.tools__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__title, .column__column-title {
+.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
@@ -259,14 +259,17 @@
 }
 
 .management {
+  width: 100%;
   height: 63.71429rem;
   background-color: #f0f8fa;
 }
 
 .management__image {
-  margin-left: 12.07143rem;
-  margin-right: 10.07143rem;
-  margin-bottom: 2.92857rem;
+  width: 100%;
+  height: 38.85714rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .management__content {
@@ -280,6 +283,28 @@
   line-height: 24px;
   color: #2a2a2d;
   margin-left: 2px;
+}
+
+.management__column:not(:last-child) {
+  margin-right: 5.71429rem;
+}
+
+.management__column__item {
+  font-size: 18px;
+  color: #6c6e75;
+  line-height: 27px;
+}
+
+.management__column__title {
+  font-size: 64px;
+  line-height: 77px;
+  margin-top: 10px;
+  margin-bottom: 51px;
+}
+
+.management__link-arrow {
+  margin-left: 10px;
+  display: flex;
 }
 
 .agency {
@@ -510,12 +535,12 @@
   border: none;
 }
 
-.tools__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__title, .column__column-title {
+.tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .header__title, .header__info-content, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .header__info-title, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
@@ -707,11 +732,6 @@ html {
   margin-right: 19.53125%;
 }
 
-.link-arrow {
-  margin-left: 10px;
-  display: flex;
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -776,28 +796,6 @@ html {
 
 .colored {
   color: #74bbbf;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.content__column:not(:last-child) {
-  margin-right: 5.71429rem;
-}
-
-.column__item {
-  font-size: 18px;
-  color: #6c6e75;
-  line-height: 27px;
-}
-
-.column__title {
-  font-size: 64px;
-  line-height: 77px;
-  margin-top: 10px;
-  margin-bottom: 51px;
 }
 
 .content__image {
