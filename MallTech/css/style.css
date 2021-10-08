@@ -18,6 +18,11 @@
   font-weight: 400;
 }
 
+.link-arrow {
+  width: 1.71429rem;
+  height: 1.71429rem;
+}
+
 .header__title, .header__info-content, .tools__title, .management__column__title, .agency__title, .press__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
   font-family: Inter;
   font-weight: 300;
