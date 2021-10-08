@@ -1,5 +1,6 @@
 @import 'components/_vars.scss';
 @import 'components/_media.scss';
+@import 'components/_forsvg.scss';
 @import 'components/_request.scss';
 @import 'components/_header.scss';
 @import 'components/_promo.scss';
@@ -33,6 +34,8 @@ html{
     // margin-right: 375/1920 * 100%;
     margin: 0 auto;
 }
+
+
 
 .buttons {
     display: flex;
