@@ -12,8 +12,6 @@
 @import 'components/_footer.scss';
 
 html{
-    // height: 100%;
-    
     font-size: $baseFontSize;
     @include desktop {
         font-size: $baseFontSize;
@@ -24,7 +22,7 @@ html{
     @include phones {
         font-size: 2vmax;
     }
-    min-width: 320px;
+    min-width: 320px;   
 }
 
 .container {
@@ -35,8 +33,6 @@ html{
     // margin-right: 375/1920 * 100%;
     margin: 0 auto;
 }
-
-
 
 .buttons {
     display: flex;
@@ -82,8 +78,6 @@ html{
     }
 }
 
-
-
 .info {
     &__item {
         min-height: 108px;
@@ -102,8 +96,6 @@ html{
 .colored {
     color: #74bbbf;
 }
-
-
 
 .content {
     &__image {
@@ -137,7 +129,6 @@ html{
     display: flex;
     justify-content: space-between;
 }
-
 
 .link-arrow{
     display: flex;

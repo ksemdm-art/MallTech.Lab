@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="scss/dist/style.css"> -->
     <title>MAIN PAGE</title>
 </head>
 
@@ -210,7 +209,7 @@
                         <img src="./img/market.jpg" alt="marketing">
                     </picture>
 
-                    <img src="./img/market.jpg" alt="marketing">
+                    <!-- <img src="./img/market.jpg" alt="marketing"> -->
                 </div>
                 <div class="agency__text">
                     <h1 class="agency__title">
@@ -240,51 +239,23 @@
 
         <section class="press">
             <div class="container">
-                <nav class="press__header">
-                    <h1 class="press__title">
+
+                <div class="press__header">
+                    <h1 class="press__header__title">
                         Пресс-центр
                     </h1>
 
-                    <div class="press__link">
+                    <div class="press__header__link">
                         Все публикации
                         <svg class="link-arrow">
                             <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
-                </nav>
-            </div>
-            <!-- <div class="press__content"> -->
-            <!-- <img class="content__image" src="./img/press.jpg" alt="press"> -->
-            <!-- <div class="press__column">
-                        <h2 class="press__column-title">
-                            Вышел журнал «Аэропорт Пермь» с нашей «Планетой» на первой обложке
-                        </h2>
+                </div>
 
-                        <p class="press__column-text">
-                            Комплекс продуктов, предназначенных для существенного увеличения доходности
-                            торгового центра.
-                        </p>
+                <!-- Slider -->
+                <div class="press__slider">
 
-                        <p class="press__column-text">
-                            Решения, представленные в этом семействе, позволяют увеличить лояльность постоянных
-                            посетителей ТРЦ и привлекать новых. Они помогают собственнику или управляющему ТРЦ лучше
-                            узнать своего потребителя, увеличить товарооборот и средний чек, а также более тонко
-                            настраивать маркетинговые активности.
-                        </p>
-
-                        <div class="press__navigation">
-                            <div class="date">
-                                .....
-                            </div>
-
-                            <div class="slider">
-                                ....
-                            </div>
-                        </div>
-                    </div> -->
-            <!-- Slider -->
-            <div class="press__slider">
-                <div class="container">
                     <div class="slider__inner">
                         <div class="slider__box">
                             <div class="slider__box-item">
@@ -295,12 +266,14 @@
                                     <source srcset="./img/press.jpg">
                                     <img src="./img/press.jpg" alt="" class="press__slider-img">
                                 </picture>
+                                
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
                                         Вышел журнал «Аэропорт Пермь» с нашей «Планетой» на первой обложке
                                     </h2>
-                                    <div class="press__slider-test">
-                                        <p class="press__slider-text">Комплекс продуктов, предназначенных
+                                    <div class="press__slider-text-wrapper">
+                                        <p class="press__slider-text">
+                                            Комплекс продуктов, предназначенных
                                             для существенного
                                             увеличения доходности
                                             торгового центра.</p>
@@ -329,12 +302,12 @@
                                     <source srcset="./img/press.jpg">
                                     <img src="./img/press.jpg" alt="" class="press__slider-img">
                                 </picture>
-                                <!-- <img src="./img/press.jpg" alt="" class="press__slider-img"> -->
+                                
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
                                         Вышел журнал «Аэропорт Пермь» с нашей «Планетой» на первой обложке
                                     </h2>
-                                    <div class="press__slider-test">
+                                    <div class="press__slider-text-wrapper">
                                         <p class="press__slider-text">Комплекс продуктов, предназначенных
                                             для существенного
                                             увеличения доходности
@@ -361,6 +334,7 @@
                 </div>
             </div>
         </section>
+
         <section class="case">
             <div class="container">
                 <h1 class="case__title">
@@ -444,6 +418,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="request">
             <div class="container">
                 <div class="request__wrapper">

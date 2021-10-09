@@ -5,13 +5,13 @@
     .container {
         width: 100%;
         // height: rem(892px);
-        padding-top: 0;
-        padding-bottom: rem(114px);    
+        padding-top: rem(135px);
+        padding-bottom: rem(167px);    
     }
 
     &__image {
-        width: 100%;
-        height: rem(544px);
+        // width: 100%;
+        // height: rem(544px);
         display: flex;
         justify-content: center;
         align-items: center;

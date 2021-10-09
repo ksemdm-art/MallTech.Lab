@@ -1,7 +1,12 @@
-@import "vars";
 .request {
-    height: rem(488px);
+    // height: rem(488px);
     background-color: #74bbbf;
+
+    .container {
+        padding-top: rem(71px);
+        padding-bottom: rem(105px);
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -149,7 +154,7 @@
     right: rem(20px);
     bottom: rem(20px);
     pointer-events: none;
-    background-image: url("/img/select-arrow.svg");
+    background: url("../icons/sprite.svg#select-arrow");
     height: 20px;
     width: 20px;
 }

@@ -1,41 +1,44 @@
 .press {
-    height: 830px;
+
+    .container {
+        padding-top: rem(46px);
+        padding-bottom: rem(80px);
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 132%;
-            background-color: #d5d5d8;
+        
+        &__title {
+            @extend %title-font;
+            font-size: rem(64px);
+            // line-height: 77px;
+            color: #3b3c40;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            @extend %link-font;
+            font-size: 16px;
+            // line-height: 24px;
+            color: #2a2a2d;
         }
     }
-    &__title {
-        @extend %title-font;
-        font-size: 64px;
-        line-height: 77px;
-        color: #3b3c40;
-    }
-    &__link {
-        display: flex;
-        align-items: center;
-        @extend %link-font;
-        font-size: 16px;
-        line-height: 24px;
-        color: #2a2a2d;
-    }
 
-    &__column {
-        width: 540/1920 * 100%;
+    .slider__box-item {
+        
+        display: flex;
+        justify-content: center;
     }
 
     &__slider-title {
-        font-size: 32px;
-        line-height: 39px;
+        padding-top: 0;
+        margin-top: 0;
+        font-size: rem(32px);
+        line-height: rem(39px);
         @extend %title-font;
-        width: 534px;
+        width: 100%;
     }
     &__slider-text {
         font-size: 18px;
@@ -44,10 +47,10 @@
         color: #6c6e75;
     }
     &__slider-info {
-        width: rem(540px);
+        margin-left: rem(40px);
     }
-    &__slider-test {
-        margin-bottom: 110px;
+    &__slider-text-wrapper {
+        margin-bottom: rem(110px);
     }
     &__slider-data {
         font-size: 14px;
@@ -56,13 +59,8 @@
         @extend %title-font;
     }
     &__slider-img {
-        width: rem(570px);
-        height: rem(527px);
-        display: block;
-    }
-
-    &__slider {
-        position: relative;
+        height: 100%;
+        object-fit: contain;
     }
 
     &__slider .slick-arrow {
@@ -72,13 +70,12 @@
         font-size: 0;
     }
 
-
     &__slider .slick-next.slick-arrow {
-        width: 54px;
-        height: 49px;
-        bottom: 20px;
-        right: 370px;
-        background: url("../img/arrow_right.svg");
+        width: rem(54px);
+        height: rem(49px);
+        bottom: rem(20px);
+        right: rem(370px);
+        background: url("../icons/sprite.svg#arrow_right");
         border: none;
     }
 
@@ -87,7 +84,7 @@
         height: 49px;
         bottom: 20px;
         right: 440px;
-        background: url("../img/arrow_left.svg");
+        background: url("../icons/sprite.svg#arrow_left");
         border: none;
     }
 }
