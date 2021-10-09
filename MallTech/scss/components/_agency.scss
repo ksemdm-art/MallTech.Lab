@@ -5,8 +5,8 @@
         display: flex;
         justify-content: start;
         align-items: center;
-        margin-top: rem(147px);
-        margin-bottom: rem(84px);
+        padding-top: rem(146px);
+        padding-bottom: rem(134px);
     }
 
     &__text {
@@ -43,4 +43,12 @@
             width: 100%;
         }
     }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 1545/1920*100%;
+        left: 375px;
+        background-color: #d5d5d8;
+}
 }

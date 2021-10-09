@@ -1,20 +1,25 @@
 .promo {
-    display: flex;
-    align-items: center;
-    height: 282px;
+    padding: rem(90px) auto rem(84px) rem(375px);
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: rem(282px);
+        width: 100%;
+    }
+    
     &__info {
         display: flex;
         justify-content: space-between;
     }
-    position: relative;
-    .container{
-        &::after {
+    
+    &::after {
             content: "";
             position: absolute;
             height: 1px;
-            width: 1520/1920*100%;
-            bottom: 0;
+            width: 1545/1920*100%;
+            left: rem(375px);
             background-color: #d5d5d8;
-        }
     }
+    
 }
