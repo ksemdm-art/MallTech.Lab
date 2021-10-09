@@ -4,6 +4,7 @@
     background-color: #74bbbf;
     &__wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding-top: rem(71px);
     }

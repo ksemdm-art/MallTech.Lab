@@ -34,7 +34,7 @@
 
             <div class="header__logo">
                 <svg class="header__logo-image">
-                    <use xlink:href="./icons/sprite.svg#logo"></use>        
+                    <use xlink:href="./icons/sprite.svg#logo"></use>
                 </svg>
             </div>
 
@@ -59,7 +59,7 @@
                     <div class="header__info-link">
                         Подробнее
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <div class="header__info-link">
                         Подробнее
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                     <div class="header__info-link">
                         Подробнее
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </div>
@@ -141,12 +141,18 @@
                     <div class="tools__link">
                         Подробнее
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="tools__image">
-                    <img src="./img/simka.jpg" alt="simka">
+                    <picture>
+                        <source srcset="./img/desktop/simka_desktop.jpg" media="(max-width: 1366px)">
+                        <source srcset="./img/tablet/simka_tablet.jpg" media="(max-width: 768px)">
+                        <source srcset="./img/mobile/mobile_simka.jpg" media="(max-width: 320px)">
+                        <source srcset="./img/simka.jpg">
+                        <img src="./img/simka.jpg" alt="simka">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -154,7 +160,13 @@
         <section class="management">
             <div class="container">
                 <div class="management__image">
-                    <img src="./img/laptop.jpg" alt="tablet">
+                    <picture>
+                        <source srcset="./img/desktop/laptop_desktop.jpg" media="(max-width: 1366px)">
+                        <source srcset="./img/tablet/laptop_tablet.jpg" media="(max-width: 768px)">
+                        <source srcset="./img/mobile/mobile_laptop.png" media="(max-width: 320px)">
+                        <source srcset="./img/laptop.jpg">
+                        <img src="./img/laptop.jpg" alt="tablet">
+                    </picture>
                 </div>
 
                 <div class="management__content">
@@ -166,7 +178,7 @@
                         <div class="management__link">
                             Подробнее
                             <svg class="management__link-arrow link-arrow">
-                                <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                                <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                             </svg>
                         </div>
                     </div>
@@ -187,9 +199,17 @@
             </div>
         </section>
 
-        <section class="agency">            
+        <section class="agency">
             <div class="container">
                 <div class="agency__image">
+                    <picture>
+                        <source srcset="./img/desktop/market_dektop.jpg" media="(max-width: 1366px)">
+                        <source srcset="./img/tablet/market_tablet.jpg" media="(max-width: 768px)">
+                        <source srcset="./img/mobile/market_mobile.jpg" media="(max-width: 320px)">
+                        <source srcset="./img/market.jpg">
+                        <img src="./img/market.jpg" alt="marketing">
+                    </picture>
+
                     <img src="./img/market.jpg" alt="marketing">
                 </div>
                 <div class="agency__text">
@@ -209,9 +229,9 @@
 
                     <div class="agency__link">
                         Подробнее
-                                                
+
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </div>
@@ -226,9 +246,9 @@
                     </h1>
 
                     <div class="press__link">
-                        Все публикации                       
+                        Все публикации
                         <svg class="link-arrow">
-                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                         </svg>
                     </div>
                 </nav>
@@ -268,7 +288,13 @@
                     <div class="slider__inner">
                         <div class="slider__box">
                             <div class="slider__box-item">
-                                <img src="./img/press.jpg" alt="" class="press__slider-img">
+                                <picture>
+                                    <source srcset="./img/desktop/press_desktop.jpg" media="(max-width: 1366px)">
+                                    <source srcset="./img/tablet/press_tablet.jpg" media="(max-width: 768px)">
+                                    <source srcset="./img/mobile/mobile_press.jpg" media="(max-width: 320px)">
+                                    <source srcset="./img/press.jpg">
+                                    <img src="./img/press.jpg" alt="" class="press__slider-img">
+                                </picture>
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
                                         Вышел журнал «Аэропорт Пермь» с нашей «Планетой» на первой обложке
@@ -296,7 +322,14 @@
                                 </div>
                             </div>
                             <div class="slider__box-item">
-                                <img src="./img/press.jpg" alt="" class="press__slider-img">
+                                <picture>
+                                    <source srcset="./img/desktop/press_desktop.jpg" media="(max-width: 1366px)">
+                                    <source srcset="./img/tablet/press_tablet.jpg" media="(max-width: 768px)">
+                                    <source srcset="./img/mobile/mobile_press.jpg" media="(max-width: 320px)">
+                                    <source srcset="./img/press.jpg">
+                                    <img src="./img/press.jpg" alt="" class="press__slider-img">
+                                </picture>
+                                <!-- <img src="./img/press.jpg" alt="" class="press__slider-img"> -->
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
                                         Вышел журнал «Аэропорт Пермь» с нашей «Планетой» на первой обложке
@@ -339,9 +372,13 @@
                     <div class="case__slider-box">
                         <div class="case__slider-item">
                             <div class="case__slider-pos">
-                                <div>
+                                <picture>
+                                    <source srcset="./img/desktop/case_desktop.jpg" media="(max-width: 1366px)">
+                                    <source srcset="./img/tablet/case_tablet.jpg" media="(max-width: 768px)">
+                                    <source srcset="./img/mobile/mobile_case.jpg" media="(max-width: 320px)">
+                                    <source srcset="./img/case.jpg">
                                     <img class="case__slider-img" src="./img/case.jpg" alt="case">
-                                </div>
+                                </picture>
                                 <div class="case__slider-info">
                                     <h2 class="case__slider-title">
                                         Внедрение системы контроля персонала MARS в ТРЦ «Молния»
@@ -361,7 +398,7 @@
                                     <div class="case__slider-link">
                                         Читать полностью
                                         <svg class="link-arrow">
-                                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -370,7 +407,13 @@
                         <div class="case__slider-item">
                             <div class="case__slider-pos">
                                 <div>
-                                    <img class="case__slider-img" src="./img/case.jpg" alt="case">
+                                    <picture>
+                                        <source srcset="./img/desktop/case_desktop.jpg" media="(max-width: 1366px)">
+                                        <source srcset="./img/tablet/case_tablet.jpg" media="(max-width: 768px)">
+                                        <source srcset="./img/mobile/mobile_case.jpg" media="(max-width: 320px)">
+                                        <source srcset="./img/case.jpg">
+                                        <img class="case__slider-img" src="./img/case.jpg" alt="case">
+                                    </picture>
                                 </div>
                                 <div class="case__slider-info">
                                     <h2 class="case__slider-title">
@@ -391,7 +434,7 @@
                                     <div class="case__slider-link">
                                         Читать полностью
                                         <svg class="link-arrow">
-                                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>        
+                                            <use xlink:href="./icons/sprite.svg#arrow_link"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -459,7 +502,7 @@
                 </div>
                 <div class="footer__logo">
                     <svg class="footer__logo-img">
-                        <use xlink:href="./icons/sprite.svg#footer-logo"></use>        
+                        <use xlink:href="./icons/sprite.svg#footer-logo"></use>
                     </svg>
                     <div class="footer__logo-text">Создание сайта —
                         компания &laquo;Пиксель Плюс&raquo;</div>
