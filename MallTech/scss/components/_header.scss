@@ -1,7 +1,8 @@
 .header {
     background-image: url("../img/main_screen.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
     background-position: top center;
     min-height: 934px;
     &__logo {
@@ -15,19 +16,20 @@
         text-transform: uppercase;
         @extend %title-font;
         color: #f2f2f2;
-        font-size: 35px;
-        line-height: 50px;
-        margin-bottom: 112px;
+        font-size: rem(35px);
+        line-height: rem(50px);
+        margin-bottom: rem(112px);
     }
     &__info {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
+        padding-bottom: rem(116px);
     }
     &__item {
-        width: 343px;
-        margin-bottom: 116px;
+        width: rem(343px);        
         &:not(:last-child) {
-            margin-right: 69px;
+            margin-right: rem(69px);
         }
     }
 
@@ -36,7 +38,7 @@
         &::after {
             content: "";
             position: absolute;
-            width: 300px;
+            width: rem(300px);
             height: 1px;
             background: #fff;
         }
@@ -45,32 +47,32 @@
     &__info-title {
         display: flex;
         margin-top: 0;
-        width: 300px;
-        height: 143px;
+        width: rem(270px);
+        height: rem(143px);
         @extend %subtitle-font;
         color: #74bbbf;
-        font-size: 30px;
-        line-height: 40px;
+        font-size: rem(30px);
+        line-height: rem(40px);
         text-transform: capitalize;
         align-items: flex-end;
-        margin-bottom: 10px;
-        margin-right: 45px;
+        margin-bottom: rem(10px);
+        margin-right: rem(45px);
     }
     &__info-content {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin-top: rem(40px);
+        margin-bottom: rem(30px);
         max-width: 100%;
         @extend %title-font;
         color: #e0e0e0;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: rem(18px);
+        line-height: rem(25px);
     }
     &__info-link {
         display: flex;
         align-items: center;
         @extend %link-font;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14px);
+        line-height: rem(24px);
         color: #f2f2f2;
 
     }
