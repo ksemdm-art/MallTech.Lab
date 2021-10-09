@@ -1,0 +1,40 @@
+.agency {
+    height: rem(858px);
+
+    &__content {
+        z-index: 1;
+        margin-top: rem(147px);
+        width: rem(536px);
+        float: right;
+    }
+    &__title {
+        @extend %title-font;
+        font-size: rem(64px);
+        line-height: rem(77px);
+        color: #3b3c40;
+    }
+    p {
+        @extend %subtitle-font;
+        font-size: rem(18px);
+        line-height: rem(27px);
+        color: #6c6e75;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        @extend %link-font;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: #2a2a2d;
+        margin-top: rem(25px);
+    }
+}
+
+.agency__image {
+    width: 32%;
+    z-index: 2;
+    float: left;
+    margin-right: rem(49px);
+    margin-left: rem(200px);
+    margin-top: rem(147px);
+}
