@@ -1,6 +1,8 @@
 @import 'components/_vars.scss';
 @import 'components/_media.scss';
+@import 'components/_forsvg.scss';
 @import 'components/_request.scss';
+@import 'components/_header.scss';
 @import 'components/_promo.scss';
 @import 'components/_tools.scss';
 @import 'components/_management.scss';
@@ -10,143 +12,34 @@
 @import 'components/_footer.scss';
 
 html{
-    height: 100%;
     font-size: $baseFontSize;
     @include desktop {
-        font-size: $baseFontSize - 5px;
+        font-size: $baseFontSize;
     }
     @include tablets {
-        font-size: $baseFontSize - 1px;
+        font-size: $baseFontSize;
     }
     @include phones {
-        font-size: 2vmax;
+        font-size: $baseFontSize;
+        // font-size: 2vmax;
     }
-    min-width: 320px;
+    min-width: 320px;   
 }
 
-.header {
-    background-image: url("../img/main_screen.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top center;
-    min-height: 934px;
-    &__logo {
-    }
-    &__logo-image {
-        margin-top: rem(54px);
-        margin-bottom: rem(155px);
-    }
-
-    &__title {
-        text-transform: uppercase;
-        @extend %title-font;
-        color: #f2f2f2;
-        font-size: 35px;
-        line-height: 50px;
-        margin-bottom: 112px;
-    }
-    &__info {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__item {
-        width: 343px;
-        margin-bottom: 116px;
-        &:not(:last-child) {
-            margin-right: 69px;
-        }
-    }
-
-    &__title-wrapper {
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 1px;
-            background: #fff;
-        }
-    }
-
-    &__info-title {
-        display: flex;
-        margin-top: 0;
-        width: 300px;
-        height: 143px;
-        @extend %subtitle-font;
-        color: #74bbbf;
-        font-size: 30px;
-        line-height: 40px;
-        text-transform: capitalize;
-        align-items: flex-end;
-        margin-bottom: 10px;
-        margin-right: 45px;
-    }
-    &__info-content {
-        margin-top: 40px;
-        margin-bottom: 30px;
-        max-width: 100%;
-        @extend %title-font;
-        color: #e0e0e0;
-        font-size: 18px;
-        line-height: 25px;
-    }
-    &__info-link {
-        display: flex;
-        align-items: center;
-        @extend %link-font;
-        font-size: 14px;
-        line-height: 24px;
-        color: #f2f2f2;
-    }
-}
 .container {
     max-width: 1171/1920 * 100%;
-    margin-left: 375/1920 * 100%;
-    margin-right: 375/1920 * 100%;
-}
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    // margin-left: 375/1920 * 100%;
+    // margin-right: 375/1920 * 100%;
+    margin: 0 auto;
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    top: 0;
-    left: 0;
-    border: none;
-
-    &__burger {
-        background-color: #74bbbf;
-        border: none;
-        width: 72px;
-        height: 71px;
-        opacity: 0.5;
-        margin-bottom: 309px;
-        padding: 15px 25px 25px 23px;
-        div {
-            width: 24px;
-            height: 3px;
-            background-color: #2a2a2d;
-            &:nth-child(even) {
-                width: 19px;
-            }
-            &:not(:last-child) {
-                margin-bottom: 5px;
-            }
-        }
-    }
-    &__consult {
-        width: 309px;
-        height: 72px;
-        background-color: #c36355;
-        transform-origin: top left;
-        transform: rotate(270deg);
-        @extend %link-font;
-        font-size: 16px;
-        line-height: 22px;
-        text-transform: uppercase;
-        color: #fff;
-        letter-spacing: 0.02em;
-        border: none;
+    @include phones {
+        max-width: 290/320 * 100%;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        margin: 0 auto;
+    
     }
 }
 
@@ -170,8 +63,6 @@ html{
 .colored {
     color: #74bbbf;
 }
-
-
 
 .content {
     &__image {
@@ -206,3 +97,7 @@ html{
     justify-content: space-between;
 }
 
+.link-arrow{
+    display: flex;
+    margin-left: 10px;
+}
