@@ -11,7 +11,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: rem(71px);
     }
     &__info {
     }
@@ -21,7 +20,7 @@
         line-height: rem(48px);
         color: #fff;
         max-width: rem(186px);
-        margin-bottom: rem(32px);
+        margin-bottom: rem(24px);
     }
     &__subtitle {
         @extend %subtitle-font;
@@ -29,7 +28,7 @@
         line-height: rem(20px);
         color: #fff;
         max-width: rem(312px);
-        margin-bottom: rem(80px);
+        padding-bottom: rem(80px);
     }
     &__contact {
         display: flex;
@@ -43,18 +42,17 @@
     }
 
     &__contact-telephone {
-        @extend %link-font;
-        font-size: 1.5rem;
+        @extend %contact-font;
+        font-size: rem(24px);
         line-height: rem(36px);
     }
 
     &__contact-email {
-        @extend %link-font;
+        @extend %contact-font;
         font-size: rem(24px);
         line-height: rem(36px);
     }
     &__form {
-        margin-left: rem(90px);
     }
     .form {
         input[type="text"] {
