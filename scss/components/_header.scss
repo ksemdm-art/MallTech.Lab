@@ -1,0 +1,180 @@
+.header {
+    background-image: url("../img/main_screen.jpg");
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: cover;
+    background-position: top center;
+    min-height: 934px;
+    &__logo {
+        @include phones {
+            margin-bottom: rem(26px);
+            width: rem(110px);
+            height: rem(596px);
+        }
+    }
+    &__logo-image {
+        margin-top: rem(54px);
+        margin-bottom: rem(155px);
+
+        @include phones {
+            margin-top: rem(13px);
+            margin-bottom: rem(26px);
+            }
+        }
+
+    &__title {
+        text-transform: uppercase;
+        @extend %title-font;
+        color: #f2f2f2;
+        font-size: rem(35px);
+        line-height: rem(50px);
+        margin-bottom: rem(112px);
+
+        @include phones {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            font-size: rem(18px);
+            line-height: rem(26px);
+            text-transform: uppercase;
+            color: #F2F2F2;
+            margin-bottom: rem(26px);
+            margin-bottom: rem(18px);
+            }
+        }
+    
+    &__info {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: rem(116px);
+    }
+    &__item {
+        width: rem(343px);        
+        &:not(:last-child) {
+            margin-right: rem(69px);
+        }
+
+        @include phones {
+            &:not(:last-child) {
+                display: none;
+            }
+        }
+    }
+
+    &__title-wrapper {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: rem(300px);
+            height: 1px;
+            background: #fff;
+        }
+    }
+
+    &__info-title {
+        display: flex;
+        margin-top: 0;
+        width: rem(270px);
+        height: rem(143px);
+        @extend %subtitle-font;
+        color: #74bbbf;
+        font-size: rem(30px);
+        line-height: rem(40px);
+        text-transform: capitalize;
+        align-items: flex-end;
+        margin-bottom: rem(10px);
+        margin-right: rem(45px);
+        
+        @include phones {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: rem(22px);
+            line-height: rem(30px);
+            display: flex;
+            align-items: flex-end;
+            text-transform: capitalize;
+
+            margin-bottom: rem(18px);
+            margin-bottom: rem(14px);
+            }
+        }
+    
+    &__info-content {
+        margin-top: rem(40px);
+        margin-bottom: rem(30px);
+        max-width: 100%;
+        @extend %title-font;
+        color: #e0e0e0;
+        font-size: rem(18px);
+        line-height: rem(25px);
+    }
+    &__info-link {
+        display: flex;
+        align-items: center;
+        @extend %link-font;
+        font-size: rem(14px);
+        line-height: rem(24px);
+        color: #f2f2f2;
+
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    top: 0;
+    left: 0;
+    border: none;
+
+    @include phones {
+        width: 32px;
+        height: 20px;
+        float: left;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+    &__burger {
+        background-color: #74bbbf;
+        border: none;
+        width: 72px;
+        height: 71px;
+        opacity: 0.5;
+        margin-bottom: 309px;
+        padding: 15px 25px 25px 23px;
+        div {
+            width: 24px;
+            height: 3px;
+            background-color: #2a2a2d;
+            &:nth-child(even) {
+                width: 19px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__consult {
+        width: 309px;
+        height: 72px;
+        background-color: #c36355;
+        transform-origin: top left;
+        transform: rotate(270deg);
+        @extend %link-font;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.02em;
+        border: none;
+
+        @include phones {
+            display: none;
+         }
+    }
+}

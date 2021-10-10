@@ -1,11 +1,16 @@
 .agency {
-    height: rem(858px);
+    // height: rem(858px);
+    
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-top: rem(146px);
+        padding-bottom: rem(134px);
+    }
 
-    &__content {
-        z-index: 1;
-        margin-top: rem(147px);
+    &__text {
         width: rem(536px);
-        float: right;
     }
     &__title {
         @extend %title-font;
@@ -28,13 +33,22 @@
         color: #2a2a2d;
         margin-top: rem(25px);
     }
+    &__image {
+        width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: rem(49px);
+        img {
+            width: 100%;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 1545/1920*100%;
+        left: 375px;
+        background-color: #d5d5d8;
 }
-
-.agency__image {
-    width: 32%;
-    z-index: 2;
-    float: left;
-    margin-right: rem(49px);
-    margin-left: rem(200px);
-    margin-top: rem(147px);
 }
