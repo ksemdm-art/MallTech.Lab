@@ -35,12 +35,29 @@ html{
     margin: 0 auto;
 
     @include phones {
-        max-width: 290/320 * 100%;
+        max-width: 440/480 * 100%;
         border-left: 1px solid red;
         border-right: 1px solid red;
         margin: 0 auto;
     
     }
+
+    @include desktop {
+        max-width: 1266/1366 * 100%;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        margin: 0 auto;
+    
+    }
+
+    @include tablets {
+        max-width: 700/768 * 100%;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        margin: 0 auto;
+    
+    }
+
 }
 
 

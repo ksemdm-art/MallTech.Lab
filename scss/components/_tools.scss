@@ -10,6 +10,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;  
+        
         @include phones {
             display: flex;
             flex-direction: column;
@@ -26,34 +27,52 @@
         line-height: rem(27px);
         color: #6c6e75;
 
-    }
-
-    &__title {
-        width: rem(560px);
-        @extend %title-font;
-        font-size: rem(64px);
-        line-height: rem(77px);
-        color: #3b3c40;
-
         @include phones {
             width: 100%;
             font-family: Inter;
             font-style: normal;
             font-weight: 300;
-            font-size: rem(32px);
-            line-height: rem(38px);
+            font-size: rem(16px);
+            line-height: rem(22px);
             color: #3B3C40;
-        }  
-    }
 
-    &__link {
-        margin-top: rem(55px);
-        display: flex;
-        align-items: center;
-        @extend %link-font;
-        font-size: rem(16px);
-        line-height: rem(24px);
-        color: #2a2a2d;
+            &>p {
+                margin-top: rem(13px);
+            }
+
+        }  
+
+        &-title {
+            width: rem(560px);
+            @extend %title-font;
+            font-size: rem(64px);
+            line-height: rem(77px);
+            color: #3b3c40;
+    
+            @include phones {
+                width: 100%;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: rem(32px);
+                line-height: rem(38px);
+                color: #3B3C40;
+            }  
+        }
+
+        &-link {
+            margin-top: rem(55px);
+            display: flex;
+            align-items: center;
+            @extend %link-font;
+            font-size: rem(16px);
+            line-height: rem(24px);
+            color: #2a2a2d;
+
+            @include phones {
+                margin-top: rem(19px);
+            }   
+        }
     }
 
     &__image {
@@ -62,10 +81,6 @@
         justify-content: start;
         object-fit: contain;
         
-        img {
-            // height: 100%;
-            // max-width: rem(985px);
-        }
         @include phones {
             order: -1;
         }
