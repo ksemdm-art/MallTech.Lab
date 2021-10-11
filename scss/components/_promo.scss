@@ -15,16 +15,14 @@
             display: flex;
             flex-direction: column;
             }
-    
     }
     
-    &::after {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 1545/1920*100%;
-            left: rem(372px);
-            background-color: #d5d5d8;
-    }
-    
+    // &::after {
+    //         content: "";
+    //         position: absolute;
+    //         height: 1px;
+    //         width: 1545/1920*100%;
+    //         left: rem(372px);
+    //         background-color: #d5d5d8;
+    // }
 }
