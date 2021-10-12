@@ -1,23 +1,40 @@
 .agency {
-    // height: rem(858px);
-    
+        
     .container {
         display: flex;
         justify-content: start;
         align-items: center;
+
+        width: 100vw;
+
         padding-top: rem(146px);
         padding-bottom: rem(134px);
+
+        @include phones {
+            flex-direction: column;
+        }
     }
 
     &__text {
-        width: rem(536px);
+        // width: rem(536px);
+        // width: 68%;
+
+        @include phones {
+            width: 100%;
+        }
     }
     &__title {
         @extend %title-font;
         font-size: rem(64px);
         line-height: rem(77px);
         color: #3b3c40;
+
+        @include phones {
+            font-size: rem(32px);
+            line-height: rem(38px);
+        }
     }
+
     p {
         @extend %subtitle-font;
         font-size: rem(18px);
@@ -39,8 +56,17 @@
         justify-content: center;
         align-items: center;
         margin-right: rem(49px);
+        
         img {
+            display: block;
+        }
+
+        @include phones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            margin-right: rem(0px);
         }
     }
     &::after {
@@ -50,5 +76,17 @@
         width: 1545/1920*100%;
         left: rem(372px);
         background-color: #d5d5d8;
-}
+
+        @include desktop {
+            width: 700/1366*100%;
+        }
+
+        @include tablets {
+            width: 500/768*100%;
+        }
+        
+        @include phones {
+            display: none;
+        }
+    }
 }

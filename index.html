@@ -159,13 +159,14 @@
         <section class="management">
             <div class="container">
                 <div class="management__image">
-                    <picture>
-                        <source srcset="./img/desktop/laptop_desktop.jpg" media="(max-width: 1366px)">
-                        <source srcset="./img/tablet/laptop_tablet.jpg" media="(max-width: 768px)">
-                        <source srcset="./img/mobile/mobile_laptop.png" media="(max-width: 320px)">
-                        <source srcset="./img/laptop.jpg">
-                        <img src="./img/laptop.jpg" alt="tablet">
-                    </picture>
+                    <img srcset="./img/mobile/mobile_laptop.png 320w,
+                                ./img/tablet/laptop_tablet.jpg 332w,
+                                ./img/desktop/laptop_desktop.jpg 590w"
+                        sizes="(max-width: 480px) 300px,                        
+                               (max-width: 768px) 450px,
+                               (max-width: 1366px) 650px,
+                               831px"
+                        src="./img/market.jpg" alt="managment">
                 </div>
 
                 <div class="management__content">
@@ -201,15 +202,14 @@
         <section class="agency">
             <div class="container">
                 <div class="agency__image">
-                    <picture>
-                        <source srcset="./img/desktop/market_dektop.jpg" media="(max-width: 1366px)">
-                        <source srcset="./img/tablet/market_tablet.jpg" media="(max-width: 768px)">
-                        <source srcset="./img/mobile/market_mobile.jpg" media="(max-width: 320px)">
-                        <source srcset="./img/market.jpg">
-                        <img src="./img/market.jpg" alt="marketing">
-                    </picture>
-
-                    <!-- <img src="./img/market.jpg" alt="marketing"> -->
+                    <img srcset="./img/mobile/market_mobile.jpg 316w,
+                                ./img/tablet/market_tablet.jpg 250w,
+                                ./img/desktop/market_dektop.jpg 445w"
+                        sizes="(max-width: 480px) 320px,                        
+                               (max-width: 768px) 250px,
+                               (max-width: 1366px) 250px,
+                               627px"
+                        src="./img/market.jpg" alt="marketing">
                 </div>
                 <div class="agency__text">
                     <h1 class="agency__title">
@@ -259,13 +259,15 @@
                     <div class="slider__inner">
                         <div class="slider__box">
                             <div class="slider__box-item">
-                                <picture>
-                                    <source srcset="./img/desktop/press_desktop.jpg" media="(max-width: 1366px)">
-                                    <source srcset="./img/tablet/press_tablet.jpg" media="(max-width: 768px)">
-                                    <source srcset="./img/mobile/mobile_press.jpg" media="(max-width: 320px)">
-                                    <source srcset="./img/press.jpg">
-                                    <img src="./img/press.jpg" alt="" class="press__slider-img">
-                                </picture>
+                                <img class="press__slider-img"
+                                srcset="./img/tablet/press_tablet.jpg 228w,
+                                        ./img/mobile/mobile_press.jpg 288w,
+                                        ./img/desktop/press_desktop.jpg 405w"
+                                sizes="(max-width: 480px) 320px,                        
+                                    (max-width: 768px) 270px,
+                                    (max-width: 1366px) 470px,
+                                    570px"
+                                src="./img/market.jpg" alt="press">
 
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
@@ -295,13 +297,15 @@
                                 </div>
                             </div>
                             <div class="slider__box-item">
-                                <picture>
-                                    <source srcset="./img/desktop/press_desktop.jpg" media="(max-width: 1366px)">
-                                    <source srcset="./img/tablet/press_tablet.jpg" media="(max-width: 768px)">
-                                    <source srcset="./img/mobile/mobile_press.jpg" media="(max-width: 320px)">
-                                    <source srcset="./img/press.jpg">
-                                    <img src="./img/press.jpg" alt="" class="press__slider-img">
-                                </picture>
+                                <img class="press__slider-img"
+                                    srcset="./img/tablet/press_tablet.jpg 228w,
+                                            ./img/mobile/mobile_press.jpg 288w,
+                                            ./img/desktop/press_desktop.jpg 405w"
+                                    sizes="(max-width: 480px) 320px,                        
+                                        (max-width: 768px) 270px,
+                                        (max-width: 1366px) 470px,
+                                        570px"
+                                    src="./img/market.jpg" alt="press">
 
                                 <div class="press__slider-info">
                                     <h2 class="press__slider-title">
@@ -346,13 +350,16 @@
                     <div class="case__slider-box">
                         <div class="case__slider-item">
                             <div class="case__slider-pos">
-                                <picture>
-                                    <source srcset="./img/desktop/case_desktop.jpg" media="(max-width: 1366px)">
-                                    <source srcset="./img/tablet/case_tablet.jpg" media="(max-width: 768px)">
-                                    <source srcset="./img/mobile/mobile_case.jpg" media="(max-width: 320px)">
-                                    <source srcset="./img/case.jpg">
-                                    <img class="case__slider-img" src="./img/case.jpg" alt="case">
-                                </picture>
+                                <img class="case__slider-img"
+                                    srcset="./img/mobile/mobile_case.jpg 288w,
+                                            ./img/tablet/case_tablet.jpg 468w,
+                                            ./img/desktop/case_desktop.jpg 831w"
+                                    sizes="(max-width: 480px) 288px,                        
+                                        (max-width: 768px) 468px,
+                                        (max-width: 1366px) 831px,
+                                        1170px"
+                                    src="./img/case.jpg" alt="case">
+ 
                                 <div class="case__slider-info">
                                     <h2 class="case__slider-title">
                                         Внедрение системы контроля персонала MARS в ТРЦ «Молния»
@@ -381,13 +388,15 @@
                         <div class="case__slider-item">
                             <div class="case__slider-pos">
                                 <div>
-                                    <picture>
-                                        <source srcset="./img/desktop/case_desktop.jpg" media="(max-width: 1366px)">
-                                        <source srcset="./img/tablet/case_tablet.jpg" media="(max-width: 768px)">
-                                        <source srcset="./img/mobile/mobile_case.jpg" media="(max-width: 320px)">
-                                        <source srcset="./img/case.jpg">
-                                        <img class="case__slider-img" src="./img/case.jpg" alt="case">
-                                    </picture>
+                                    <img class="case__slider-img"
+                                    srcset="./img/mobile/mobile_case.jpg 288w,
+                                            ./img/tablet/case_tablet.jpg 468w,
+                                            ./img/desktop/case_desktop.jpg 831w"
+                                    sizes="(max-width: 480px) 288px,                        
+                                        (max-width: 768px) 468px,
+                                        (max-width: 1366px) 831px,
+                                        1170px"
+                                    src="./img/case.jpg" alt="case">
                                 </div>
                                 <div class="case__slider-info">
                                     <h2 class="case__slider-title">

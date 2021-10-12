@@ -14,7 +14,8 @@
         @include phones {
             display: flex;
             flex-direction: column;
-            align-items: center
+            align-items: center;
+            width: 100%;
         }  
     }
 
@@ -51,9 +52,6 @@
     
             @include phones {
                 width: 100%;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 300;
                 font-size: rem(32px);
                 line-height: rem(38px);
                 color: #3B3C40;

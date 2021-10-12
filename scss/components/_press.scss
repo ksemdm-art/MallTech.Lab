@@ -3,6 +3,13 @@
     .container {
         padding-top: rem(46px);
         padding-bottom: rem(80px);
+
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__header {
@@ -12,7 +19,7 @@
         &__title {
             @extend %title-font;
             font-size: rem(64px);
-            // line-height: 77px;
+            line-height: rem(77px);
             color: #3b3c40;
         }
 
@@ -20,8 +27,8 @@
             display: flex;
             align-items: center;
             @extend %link-font;
-            font-size: 16px;
-            // line-height: 24px;
+            font-size: rem(16px);
+            line-height: rem(24px);
             color: #2a2a2d;
         }
     }
@@ -30,6 +37,13 @@
         
         display: flex;
         justify-content: center;
+
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__slider-title {
@@ -39,15 +53,38 @@
         line-height: rem(39px);
         @extend %title-font;
         width: 100%;
+
+        @include phones {
+            font-size: rem(24px);
+            line-height: rem(29px);
+
+        }
     }
     &__slider-text {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: rem(18px);
+        line-height: rem(27px);
         @extend %subtitle-font;
         color: #6c6e75;
+
+        @include phones {
+            font-size: rem(16px);
+            line-height: rem(22px);
+
+        }
     }
     &__slider-info {
         margin-left: rem(40px);
+
+        @include phones {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__slider-text-wrapper {
         margin-bottom: rem(110px);
@@ -59,8 +96,18 @@
         @extend %title-font;
     }
     &__slider-img {
-        height: 100%;
-        object-fit: contain;
+        width: rem(570px);
+        border-radius: 16px;
+
+        // height: 100%;
+        object-fit: cover;
+
+        @include phones {
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
     }
 
     &__slider .slick-arrow {
@@ -80,10 +127,10 @@
     }
 
     &__slider .slick-prev.slick-arrow {
-        width: 54px;
-        height: 49px;
-        bottom: 20px;
-        right: 440px;
+        width: rem(54px);
+        height: rem(49px);
+        bottom: rem(20px);
+        right: rem(440px);
         background: url("../icons/sprite.svg#arrow_left");
         border: none;
     }
