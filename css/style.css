@@ -663,7 +663,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding-top: 10.42857rem;
   padding-bottom: 9.57143rem;
 }
@@ -674,6 +674,10 @@
   }
 }
 
+.agency__text {
+  width: 50%;
+}
+
 @media screen and (max-width: 480px) {
   .agency__text {
     width: 100%;
@@ -681,15 +685,32 @@
 }
 
 .agency__title {
+  width: 100%;
   font-size: 4.57143rem;
   line-height: 5.5rem;
   color: #3b3c40;
+}
+
+@media screen and (max-width: 1366px) {
+  .agency__title {
+    font-size: 3.71429rem;
+    line-height: 4.14286rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .agency__title {
+    font-size: 3rem;
+    line-height: 3.42857rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .agency__title {
     font-size: 2.28571rem;
     line-height: 2.71429rem;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -709,24 +730,34 @@
 }
 
 .agency__image {
-  width: 32%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 3.5rem;
+  width: 50%;
+  height: 41.42857rem;
+  background-image: url("../../img/market.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.agency__image img {
-  display: block;
+@media screen and (max-width: 1366px) {
+  .agency__image {
+    background-size: contain;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .agency__image {
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .agency__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center center;
+    background-size: contain;
     width: 100%;
-    margin-right: 0rem;
   }
 }
 
