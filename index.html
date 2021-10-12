@@ -145,13 +145,21 @@
                     </div>
                 </div>
                 <div class="tools__image">
-                    <picture>
+                    <!-- <picture>
                         <source srcset="./img/desktop/simka_desktop.jpg" media="(max-width: 1366px)">
                         <source srcset="./img/tablet/simka_tablet.jpg" media="(max-width: 768px)">
                         <source srcset="./img/mobile/mobile_simka.jpg" media="(max-width: 480px)">
                         <source srcset="./img/simka.jpg">
                         <img src="./img/simka.jpg" alt="simka">
-                    </picture>
+                    </picture> -->
+                    <img srcset="./img/mobile/mobile_simka.jpg 320w,
+                                ./img/tablet/simka_tablet.jpg 350w,
+                                ./img/desktop/simka_desktop.jpg 621w"
+                         sizes="(max-width: 480px) 320px,
+                                (max-width: 768px) 450px,
+                                (max-width: 1366px) 650px,
+                                875px"
+                            src="./img/simka.jpg" alt="simka">
                 </div>
             </div>
         </section>
