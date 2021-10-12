@@ -70,6 +70,18 @@
             width: rem(300px);
             height: 1px;
             background: #fff;
+
+            @include desktop {
+                width: 700/1366*100%;
+            }
+
+            @include tablets {
+                width: 500/768*100%;
+            }
+
+            @include phones {
+                display: none;
+            }
         }
     }
 
