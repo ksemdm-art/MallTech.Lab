@@ -1,66 +1,69 @@
 .case {
     background-color: #f0f8fa;
-    &__title {
+    
+    &__slider-box {
+        // Глюк slick.js не удалять, а то получим огромную width элемента
+        width: 100%;
+    }
+
+    .container {
         padding-top: rem(94px);
+        padding-bottom: rem(101px);
+        @include phones {
+            padding-top: rem(45px);
+            padding-bottom: rem(0px);
+        }
+    }
+
+    &__title {
+        @extend %title-font;
         font-size: rem(64px);
         line-height: rem(77px);
-        @extend %title-font;
-    }
-
-    &__slider {
-        .container {
-            @include phones {
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-    &__slider-box {
         @include phones {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    &__slider-img {
-        width: 100%;
-        
-    }
-    &__slider-item {
-        @include phones {
-
-        }
-    }
-    &__slider-pos {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        padding-bottom: rem(170px);
-        @include phones {
-            padding: 0;
+            font-size: rem(32px);
+            line-height: rem(38px);
+            padding-top: 0;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            
+            text-align: left;
+        }        
+    }
+
+    &__slider-item {
+        position: relative;
+        width: rem(1170px);
+        height: rem(580px);
+        margin-bottom: rem(69px);          
+        background-image: url('../../img/case.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        @include phones {
+            height: rem(419px);
+            background-position: left top;
+            position: relative;
         }
     }
-    &__slider-info {
-        z-index: 2;
+    
+    &__slider-info { 
         position: absolute;
-        width: rem(549px);
-        // height: rem(452px);
-        background: #ffffff;
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
-        bottom: rem(110px);
+        bottom:-50px;
         right: 0;
+        height: rem(452px);
+        width: rem(549px);
+        background: #ffffff;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);  
+        @include phones {
+            position: relative;
+            top: rem(280px);
+            background-color: transparent;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }     
     }
+
     &__slider-title {
         width: rem(422px);
         font-size: rem(32px);
@@ -71,13 +74,21 @@
         @include phones {
             width: 100%;
             padding: 0;
-            margin: 0;            
+            margin: 0;
         }
-    }
+        }
+    
     &__slider-content {
         width: rem(460px);
         padding: 0px 40px 0 49px;
         margin-bottom: rem(30px);
+        @include phones {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
     }
 
     &__slider-text {
@@ -85,6 +96,14 @@
         @extend %subtitle-font;
         font-size: rem(18px);
         line-height: rem(27px);
+        @include phones {
+            width: 100%;
+            padding: rem(16px) 0;
+            margin: rem(16px) 0;
+            ont-size: rem(16px);
+            line-height: rem(22px);
+
+        }
     }
     &__slider-link {
         display: flex;
@@ -93,36 +112,39 @@
         font-size: rem(14px);
         line-height: rem(24px);
         padding-left: rem(49px);
+        @include phones {
+            display: none;
+        }
     }
 
-    &__slider .slick-arrow {
-        position: absolute;
-        bottom: 0;
-        z-index: 10;
-        font-size: 0;
-    }
-
-    &__slider {
-        // position: relative;
-    }
-
-
-    &__slider .slick-next.slick-arrow {
+    &__prev-button {
         width: rem(54px);
         height: rem(49px);
-        bottom: rem(20px);
-        right: rem(370px);
-        background: url("../icons/sprite.svg#case_arrow_right");
-        border: none;
+        background: #FFFFFF;
+        fill: #fff;        
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        @include phones {
+            display: inline-block;
+            width: rem(35px);
+            height: rem(32px);
+            margin-top: rem(22px);
+            margin-bottom: rem(22px);
+        }
     }
-
-    &__slider .slick-prev.slick-arrow {
+    &__next-button {
         width: rem(54px);
         height: rem(49px);
-        bottom: rem(20px);
-        right: rem(440px);
-        background: url("../icons/sprite.svg#case_arrow_left");
-        border: none;
+        background: #FFFFFF;
+        fill: #fff;
+        margin-left: rem(16px);        
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        @include phones {
+            display: inline-block;
+            width: rem(35px);
+            height: rem(32px);
+            margin-right: rem(5px);
+            margin-top: rem(22px);
+            margin-bottom: rem(22px);
+        }
     }
-
 }
