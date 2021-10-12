@@ -69,6 +69,7 @@
             margin-right: rem(0px);
         }
     }
+
     &::after {
         content: "";
         position: absolute;
@@ -89,4 +90,5 @@
             display: none;
         }
     }
+
 }
