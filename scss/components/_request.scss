@@ -1,8 +1,4 @@
 .request {
-
-    @include phones {
-        display: none;
-    }
     
     background-color: #74bbbf;
 
@@ -16,6 +12,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__title {
@@ -60,6 +63,7 @@
     &__form {
     }
     .form {
+
         input[type="text"] {
             @extend %subtitle-font;
             padding: rem(0px) rem(20px);

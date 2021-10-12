@@ -8,6 +8,15 @@
     }
 
     &__slider {
+        .container {
+            @include phones {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
     &__slider-box {
         @include phones {
@@ -19,14 +28,28 @@
     }
     &__slider-img {
         width: 100%;
+        
     }
     &__slider-item {
+        @include phones {
+
+        }
     }
     &__slider-pos {
         z-index: 1;
         position: relative;
         display: flex;
         padding-bottom: rem(170px);
+        @include phones {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
     }
     &__slider-info {
         z-index: 2;
@@ -45,12 +68,18 @@
         @extend %title-font;
         padding: rem(15px) rem(81px) rem(0px) rem(46px);
         margin-bottom: rem(23px);
+        @include phones {
+            width: 100%;
+            padding: 0;
+            margin: 0;            
+        }
     }
     &__slider-content {
         width: rem(460px);
         padding: 0px 40px 0 49px;
         margin-bottom: rem(30px);
     }
+
     &__slider-text {
         color: #6c6e75;
         @extend %subtitle-font;
@@ -74,7 +103,7 @@
     }
 
     &__slider {
-        position: relative;
+        // position: relative;
     }
 
 
