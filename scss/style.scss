@@ -30,51 +30,36 @@ html{
 .container {
     max-width: 1171/1920 * 100%;
     max-width: 60,9%;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    // border-left: 1px solid red;
+    // border-right: 1px solid red;
     // margin-left: 375/1920 * 100%;
     // margin-right: 375/1920 * 100%;
     margin: 0 auto;
 
     @include desktop {
         max-width: 1266/1366 * 100%;
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        // border-left: 1px solid red;
+        // border-right: 1px solid red;
         margin: 0 auto;    
     }
 
     @include tablets {
         max-width: 700/768 * 100%;
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        // border-left: 1px solid red;
+        // border-right: 1px solid red;
         margin: 0 auto;
     }
 
     @include phones {
         max-width: 440/480 * 100%;
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        // border-left: 1px solid red;
+        // border-right: 1px solid red;
         margin: 0 auto;
     
     }
 
 }
 
-.info {
-    &__item {
-        min-height: 108px;
-        @extend %subtitle-font;
-        font-size: 18px;
-        line-height: 27px;
-        color: #6c6e75;
-        &:first-child {
-            max-width: 800px;
-        }
-        &:last-child {
-            max-width: 312px;
-        }
-    }
-}
 .colored {
     color: #74bbbf;
 }
