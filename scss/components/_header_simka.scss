@@ -1,0 +1,25 @@
+.simka {
+    background-image: url("../../img/simka-page/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: con;
+    background-position: top center;
+
+    &__header-wrapper {
+        width: 100%;
+        height: rem(620px);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header-text {
+        width: 50%;        
+    }
+
+    &__header-img {
+        width: 50%;
+        background-image: url("../../img/simka-page/header-device.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+}

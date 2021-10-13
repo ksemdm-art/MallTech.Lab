@@ -1,9 +1,9 @@
-.header__title, .header__info-content, .tools__content-title, .management__column__title, .agency__title, .press__header__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
+.header__title, .header__info-content, .functional__text p, .tools__content-title, .management__column__title, .agency__title, .press__header__title, .press__slider-title, .press__slider-data, .case__title, .case__slider-title, .footer__info, .column__column-title {
   font-family: Inter;
   font-weight: 300;
 }
 
-.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .header__info-title, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .info__item, .column__column-text {
+.request__subtitle, .request .form input[type="text"], .request .form__theme, .request .form__description, .request .form__btn, .header__info-title, .functional__text-header, .tools__content, .management__column__item, .agency p, .press__slider-text, .case__slider-text, .info__item, .column__column-text {
   font-family: Inter;
   font-weight: 400;
 }
@@ -411,6 +411,79 @@
   .buttons__consult {
     display: none;
   }
+}
+
+.simka {
+  background-image: url("../../img/simka-page/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: con;
+  background-position: top center;
+}
+
+.simka__header-wrapper {
+  width: 100%;
+  height: 44.28571rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simka__header-text {
+  width: 50%;
+}
+
+.simka__header-img {
+  width: 50%;
+  background-image: url("../../img/simka-page/header-device.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.functional {
+  margin: 0;
+  padding: 0 5.14286rem;
+  width: 100%;
+  background: #F0F8FA;
+}
+
+.functional .container {
+  padding: 7.78571rem 8.64286rem 0 8.64286rem;
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  max-width: 83.64286rem;
+  height: 40.21429rem;
+}
+
+.functional__img {
+  width: 50%;
+  background-image: url("../../img/simka-page/func-device.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.functional__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.functional__text p {
+  width: 100%;
+  margin-top: 1.42857rem;
+  font-weight: 300;
+  font-size: 1.28571rem;
+  line-height: 1.92857rem;
+  color: #3B3C40;
+}
+
+.functional__text-header {
+  width: 100%;
+  font-weight: 300;
+  font-size: 2.85714rem;
+  line-height: 3.42857rem;
+  color: #3B3C40;
 }
 
 .promo {
