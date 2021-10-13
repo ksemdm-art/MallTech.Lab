@@ -1,0 +1,46 @@
+.functional {
+    margin: 0;
+    padding: 0 rem(72px);
+    width: 100%;
+    background: #F0F8FA;
+    .container {
+        padding: rem(109px) rem(121px) 0 rem(121px);
+        background: #FFFFFF;
+        border-radius: 30px;
+        display: flex;
+        max-width: rem(1171px);
+        height: rem(563px);
+    }
+
+    &__img {
+        width: 50%;
+        background-image: url("../../img/simka-page/func-device.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+
+    &__text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            @extend %title-font;
+            width: 100%;
+            margin-top: rem(20px);
+            font-weight: 300;
+            font-size: rem(18px);
+            line-height: rem(27px);
+            color: #3B3C40;
+        }
+    }
+    &__text-header {
+        width: 100%;
+        @extend %subtitle-font;
+        font-weight: 300;
+        font-size: rem(40px);
+        line-height: rem(48px);
+        color: #3B3C40;
+    }
+}

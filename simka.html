@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MAIN PAGE</title>
+</head>
+
+<body>
+    <header class="simka">
+        <div class="buttons">
+            <button class="buttons__burger">
+                <div class="burger-wrapper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+            <button class="buttons__consult">
+                Получить консультацию
+            </button>
+        </div>
+
+        <div class="container">
+
+            <div class="header__logo">
+                <svg class="header__logo-image">
+                    <use xlink:href="./icons/sprite.svg#logo"></use>
+                </svg>
+            </div>
+
+            <div class="simka__header-wrapper">
+                <div class="simka__header-text">
+                    <h1 class="header__title">СИМКА</h1>
+                    <div class="header__info">
+                        <div class="header__item">
+                            <p class="header__info-content">
+                                СИМКА – тикетная система, которая позволяет контролировать работу аутсорсинговых
+                                компаний, арендаторов и качество сервисов ТРЦ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="simka__header-img"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="functional">
+            <div class="container">
+                <div class="functional__img"></div>
+                <div class="functional__text">
+                    <h2 class="functional__text-header">Функционал системы</h2>
+                    <p>Но базовый вектор развития играет определяющее значение для модели развития.</p>
+                    <p>А ещё независимые государства освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="request">
+            <div class="container">
+                <div class="request__wrapper">
+                    <div class="request__info">
+                        <div class="request__title">
+                            Оставьте
+                            заявку
+                        </div>
+                        <p class="request__subtitle">
+                            Расскажите о проекте и задайте вопросы — мы скоро ответим
+                        </p>
+                        <div class="request__contact">
+                            <a class="request__contact-telephone" href="tel:+74951525120">+7 (495) 152-51-20</a>
+                            <a class="request__contact-email" href="mailto:hello@malltech.ru">hello@malltech.ru</a>
+                        </div>
+                    </div>
+                    <div class="request__form">
+                        <form class="form" action="">
+                            <div class="form__content">
+                                <input type="text" class="form__name" placeholder="Имя *" required>
+                                <input type="text" class="form__tel" placeholder="Телефон *">
+                            </div>
+                            <input type="text" class="form__email" placeholder="Почта">
+                            <div class="select__wrapper">
+                                <select name="" id="" class="form__theme">
+                                    <option value="" disabled selected hidden>Тема обращения</option>
+                                    <option class="form__theme-option" value="1">Тема 1</option>
+                                    <option class="form__theme-option" value="2">Тема 2</option>
+                                    <option class="form__theme-option" value="3">Тема 3</option>
+                                </select>
+                            </div>
+                            <div class="form__submit">
+                                <p class="form__description">
+                                    Нажав на кнопку, соглашаюсь на обработку
+                                    <a class="form__link" href=#>персональных данных</a>
+                                </p>
+                                <input class="form__btn" type="submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="footer__description">
+                        &copy; 2021 Malltech.Lab — Разработка продуктов для цифрового управления бизнесом ТРЦ
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__links-item" href="#"><span class="footer__links-border">Политика
+                                конфиденциальности</span></a>
+                        <a class="footer__links-item" href="#"><span class="footer__links-border">Условия
+                                использования</span></a>
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <svg class="footer__logo-img">
+                        <use xlink:href="./icons/sprite.svg#footer-logo"></use>
+                    </svg>
+                    <div class="footer__logo-text">Создание сайта —
+                        компания &laquo;Пиксель Плюс&raquo;</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
